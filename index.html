@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Digest Sync</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; padding: 3rem 1.25rem; font: 16px/1.7 -apple-system, "Segoe UI",
+         "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+         max-width: 44rem; margin-inline: auto; }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  .sub { color: #6b7280; margin: 0 0 2rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 .5rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .35rem; border-radius: 4px;
+         font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.3);
+           color: #6b7280; font-size: .875rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>AI Digest Sync</h1>
+<p class="sub">A personal tool for collecting AI news and saving daily digests to Google Drive.</p>
+
+<h2>What it is</h2>
+<p>
+  <strong>AI Digest Sync</strong> is a private, single-user utility. It runs on my own
+  server and does one thing: it gathers headlines from a fixed list of public
+  RSS feeds about artificial intelligence, arranges them into a daily Markdown
+  digest, and uploads that file into a folder in <em>my own</em> Google Drive.
+</p>
+
+<h2>How it uses your Google account</h2>
+<ul>
+  <li>It signs in to Google with the <code>drive</code> scope, which lets it create
+      and update the digest files it produces.</li>
+  <li>It writes only to the folder I choose. It does not read, modify, or delete
+      any other file in the account.</li>
+  <li>The sign-in is granted once by the account owner. There is no third-party
+      service in the middle: the tool talks directly to Google's API.</li>
+  <li>Access can be revoked at any time from
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+
+<h2>Who can use it</h2>
+<p>
+  This application is for personal use only. It is not distributed, not listed in
+  any directory, and not offered as a service to the public. It is used by fewer
+  than 100 accounts — in practice, by one.
+</p>
+
+<h2>Data</h2>
+<ul>
+  <li>No analytics, no tracking, no advertising, no accounts to register.</li>
+  <li>The digest content is compiled from publicly available RSS feeds.</li>
+  <li>Google credentials are stored only on the owner's own server.</li>
+</ul>
+
+<footer>
+  <p>
+    <a href="./privacy.html">Privacy policy</a>
+  </p>
+  <p>Last updated: 22 October 2026</p>
+</footer>
+
+</body>
+</html>
